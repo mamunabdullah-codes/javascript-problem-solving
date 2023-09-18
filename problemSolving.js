@@ -150,4 +150,4 @@ let theSentence =
   "In a delicious pizza, the slice method allows you to choose precisely how big or small a piece you want, just like JavaScript's slice method lets you extract specific portions of an array, ensuring you get exactly what you need.";
 
 let sliceSentence = theSentence.slice(0, 40);
-console.log("The sliced part of the sentence is:", sliceSentence);
+console.log("Ans 13. The sliced part of the sentence is:", sliceSentence);
