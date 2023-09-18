@@ -62,18 +62,6 @@ if (word.indexOf(lowerSearchAlphabet) !== -1) {
   );
 }
 
-// Check whether a Word is in the sentence or not.
-let sentence = "A Quick Brown Fox Jumped Over The Lazy Dog".toLowerCase();
-// let toLowerSentence = sentence.toLowerCase();  (Another Way)
-let searchWord = "Vixen";
-let lowerSearchWord = searchWord.toLowerCase();
-
-if (sentence.indexOf(lowerSearchWord) !== -1) {
-  console.log("Extra Ans: The searched word : ", searchWord, "is found");
-} else {
-  console.log("Extra Ans: The searched word : ", searchWord, "is not found");
-}
-
 // 7. check whether the temperature is hot, cold or normal.
 
 //(Weather >=30  is hot, Weather <= 25 is cold , any other value is normal)
@@ -132,3 +120,34 @@ for (let count = 10; count <= 50; count++) {
     console.log("Even Number: ", count);
   }
 }
+
+// String Only
+
+// 11. Using string.indexOf search for a word if it is present in a sentence variable or not.
+
+let sentence = "A Quick Brown Fox Jumped Over The Lazy Dog".toLowerCase();
+// let toLowerSentence = sentence.toLowerCase();  (Another Way)
+let searchWord = "LazY";
+let lowerSearchWord = searchWord.toLowerCase();
+
+if (sentence.indexOf(lowerSearchWord) !== -1) {
+  console.log("Ans 11: The searched word : ", searchWord, "is found");
+} else {
+  console.log("Ans 11: The searched word : ", searchWord, "is not found");
+}
+
+// 12. Using string.includes method search for a word if it is present in a sentence variable or not.
+
+if (sentence.includes(lowerSearchWord)) {
+  console.log("Ans 12: The searched word", searchWord, "is found");
+} else {
+  console.log("Ans 12: The searched word", searchWord, "is not found");
+}
+
+// 13. Slice a sentence of 50 words and show only the first 40 index of the sentence using string.slice method and …. At the console.log
+
+let theSentence =
+  "In a delicious pizza, the slice method allows you to choose precisely how big or small a piece you want, just like JavaScript's slice method lets you extract specific portions of an array, ensuring you get exactly what you need.";
+
+let sliceSentence = theSentence.slice(0, 40);
+console.log("The sliced part of the sentence is:", sliceSentence);
